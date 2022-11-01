@@ -1,0 +1,257 @@
+/*START HEADER*/
+
+header {
+  min-height: 80vh;
+  // top header
+  .top-bar {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    padding: 10px 20px;
+
+    .logo {
+      font-family: $font-bold;
+      font-size: 20px;
+      letter-spacing: -1.5px;
+      line-height: 30px;
+      color: $dark-blue;
+      user-select: none;
+    }
+
+    .our-app {
+      display: flex;
+      gap: 10px;
+      align-items: center;
+      justify-content: center;
+      border: 1px solid $gray;
+      border-radius: 5px;
+      padding: 10px 20px;
+      cursor: pointer;
+      transition: $duration;
+
+      & img {
+        width: 16px;
+        height: 16px;
+      }
+
+      & span {
+        font-family: $font-semiBold;
+        color: $dark-blue;
+        font-size: 14px;
+      }
+
+      &:hover {
+        border: 1px solid $dark-blue;
+      }
+    }
+  }
+
+  // hero
+  .hero-wrapper {
+    .hero-text {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      max-width: 180px;
+      position: absolute;
+      top: 45%;
+
+      .hero-text-title {
+        color: $dark-blue;
+        font-size: 35px;
+        line-height: 35px;
+        font-family: $font-bold;
+        letter-spacing: -2px;
+      }
+
+      .hero-text-desc {
+        color: $dark-blue;
+        font-size: 16px;
+        line-height: 20px;
+        letter-spacing: -1px;
+
+        .easy {
+          border-bottom: 2px solid $yellow;
+        }
+
+        .banana {
+          font-size: 14px;
+          line-height: 20px;
+        }
+      }
+
+      .hero-btn {
+        background-color: $dark-blue;
+        color: white;
+        font-size: 14px;
+        padding: 10px 20px;
+        border-radius: 5px;
+        cursor: pointer;
+        max-width: fit-content;
+        transition: $duration;
+
+        &:hover {
+          background-color: #17107a;
+        }
+      }
+    }
+
+    .hero-img {
+      position: absolute;
+      top: 63px;
+      right: 0;
+      z-index: -1;
+      padding-left: 20px;
+    }
+  }
+}
+
+@media (min-width: $mobile) {
+  header {
+    .hero-wrapper {
+      .hero-text {
+        max-width: 220px;
+        .hero-text-title {
+          font-size: 42px;
+          line-height: 42px;
+        }
+        .hero-text-desc {
+          font-size: 20px;
+          .banana {
+            font-size: 20px;
+          }
+        }
+        .hero-btn {
+          font-size: 16px;
+          padding: 12px 24px;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 600px) {
+  header {
+    .hero-wrapper {
+      .hero-img {
+        padding-left: 20%;
+      }
+    }
+  }
+}
+
+@media (min-width: $tablet) {
+  header {
+    .hero-wrapper {
+      .hero-text {
+        max-width: 300px;
+        .hero-text-title {
+          font-size: 50px;
+          line-height: 50px;
+        }
+        .hero-text-desc {
+          font-size: 24px;
+          line-height: 24px;
+          .banana {
+            font-size: 24px;
+            line-height: 24px;
+          }
+        }
+        .hero-btn {
+          font-size: 20px;
+          padding: 15px 30px;
+        }
+      }
+      .hero-img {
+        top: 0;
+        padding-left: 10%;
+      }
+    }
+  }
+}
+
+@media (min-width: $laptop) {
+  header {
+    min-height: 100vh;
+    .top-bar {
+      padding: 30px 40px;
+      .logo {
+        font-size: 24px;
+      }
+      .our-app {
+        position: absolute;
+        left: 15%;
+        & img {
+          width: 20px;
+          height: 20px;
+        }
+        & span {
+          font-size: 18px;
+        }
+      }
+    }
+    .hero-wrapper {
+      .hero-text {
+        top: 30%;
+        gap: 30px;
+        max-width: 450px;
+        .hero-text-title {
+          font-size: 70px;
+          line-height: 65px;
+          letter-spacing: 0;
+        }
+        .hero-text-desc {
+          letter-spacing: 0;
+        }
+        .hero-btn {
+          padding: 15px 40px;
+        }
+      }
+      .hero-img {
+        padding-left: 50%;
+      }
+    }
+  }
+}
+
+@media (min-width: $desktop) {
+  header {
+    min-height: 90vh;
+    .top-bar {
+      padding: 50px 90px;
+      .our-app {
+        padding: 15px 20px;
+        & img {
+          width: 22px;
+          height: 22px;
+        }
+        & span {
+          font-size: 18px;
+        }
+      }
+    }
+    .hero-wrapper {
+      .hero-text {
+        top: 30%;
+        gap: 35px;
+        max-width: 550px;
+        .hero-text-title {
+          font-size: 90px;
+          line-height: 85px;
+        }
+        .hero-text-desc {
+          font-size: 26px;
+          .banana {
+            font-size: 28px;
+            line-height: 28px;
+          } 
+        }
+        .hero-btn {
+          padding: 25px 50px;
+        }
+      }
+    }
+  }
+}
+
+/*END HEADER*/

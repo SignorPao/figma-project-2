@@ -1,0 +1,106 @@
+/*RESET STYLES*/
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  scroll-behavior: smooth;
+}
+
+html,
+body {
+  height: 100%;
+  font-family: "EuclidCircularB-Regular";
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+  font-weight: inherit;
+  font-size: inherit;
+}
+
+ol,
+ul,
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track{
+  background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb{
+  background-color: $light-yellow;
+  border-radius: 5px;
+}
+
+.wrapper,
+.container {
+  padding: 20px;
+}
+
+@media (min-width: $tablet) {
+  .container {
+    padding: 0;
+    max-width: 80%;
+    margin: auto;
+  }
+}
+
+@media (min-width: $laptop) {
+  .wrapper {
+    padding: 20px 40px;
+  }
+  .container {
+    max-width: 70%;
+    margin: auto;
+    padding: 0;
+  }
+}
+
+@media (min-width: $desktop) {
+  .wrapper {
+    padding: 50px 90px;
+  }
+  .container {
+    max-width: 60%;
+    margin: auto;
+  }
+}
+
+/*END RESET STYLES*/
